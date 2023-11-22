@@ -24,7 +24,7 @@ public class GreetingController {
         User user = userFeignClient.getUserById(userId);
 
         if (user == null || !StringUtils.hasLength(user.getName())) {
-            return "Hello, 匿名者";
+            return "Hello, 匿名者 ";
         }
 
         return "Hello, " + user.getName();
